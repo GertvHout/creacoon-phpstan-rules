@@ -63,13 +63,13 @@ class EnforceParameterConvention implements Rule
         $parent = $node->getAttribute('parent');
 
         if ($parent instanceof Closure) {
-            if (! $this->naming_convention_helper->isSnakeCase($name)) {
+            if (! $this->naming_convention_helper->isCamelCase($name)) {
                 return [sprintf('Closure parameter "$%s" should use snake_case naming convention.', $name)];
             }
             return [];
         }
         if ($parent instanceof ArrowFunction) {
-            if (! $this->naming_convention_helper->isSnakeCase($name)) {
+            if (! $this->naming_convention_helper->isCamelCase($name)) {
                 return [sprintf('Arrow-function parameter "$%s" should use snake_case naming convention.', $name)];
             }
             return [];
