@@ -1,0 +1,20 @@
+{
+  "name": "creacoon/phpstan-rules",
+  "type": "phpstan-extension",
+  "require": {
+    "php": "^8.0",
+    "phpstan/phpstan": "^1.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "Creacoon\\PhpStanRules\\": "src/"
+    }
+  },
+  "extra": {
+    "phpstan": {
+      "includes": [
+        "rules.neon"
+      ]
+    }
+  }
+}

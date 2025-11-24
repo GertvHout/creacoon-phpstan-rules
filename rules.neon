@@ -1,0 +1,13 @@
+services:
+    -
+        class: Creacoon\PhpStanRules\EnforceScopedVariableConvention
+        tags:
+            - phpstan.rules.rule
+    -
+        class: Creacoon\PhpStanRules\EnforceParameterConvention
+        tags:
+            - phpstan.rules.rule
+    -
+        class: Creacoon\PhpStanRules\EnforceClassNameConvention
+        tags:
+            - phpstan.rules.rule
