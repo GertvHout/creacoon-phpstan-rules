@@ -10,7 +10,6 @@ use PHPStan\Rules\Rule;
 /**
  * Enforce Class naming:
  * - Class/Interface/Trait names must be PascalCase.
- * - The name must match the filename (PSR-4 compliance).
  *
  * @implements Rule<ClassLike>
  */

@@ -27,13 +27,12 @@ This package is intended to be installed in a PHP project analyzed with PHPStan.
 install:
 
 ```
-composer require --dev creacoon/phpstan-rules phpstan/extension-installer
+composer require --dev creacoon/phpstan-rules
 ```
 
 ## Usage
-The package uses Composer's PHPStan integration to automatically include `rules.neon` via `extra.phpstan.includes`. In most cases, no extra configuration is required after installation.
 
-If you prefer or need an explicit include in your project's `phpstan.neon`/`phpstan.neon.dist`, add:
+Include in your project's `phpstan.neon`/`phpstan.neon.dist`:
 
 ```neon
 includes:
