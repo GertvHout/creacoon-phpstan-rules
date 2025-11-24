@@ -24,12 +24,10 @@ Entry point for PHPStan discovery:
 ## Installation
 This package is intended to be installed in a PHP project analyzed with PHPStan.
 
-Because this repository is not necessarily published on Packagist, you have a few options:
-
-install with:
+install:
 
 ```
-composer require --dev creacoon/phpstan-rules
+composer require --dev creacoon/phpstan-rules phpstan/extension-installer
 ```
 
 ## Usage
@@ -49,7 +47,7 @@ vendor/bin/phpstan
 ```
 
 ### Configuring excluded namespaces (EnforceParameterConvention)
-`EnforceParameterConvention` supports excluding namespaces (e.g., DTOs) from the camelCase rule for parameters of named functions/methods.
+`EnforceParameterConvention` and `EnforceScopedVariableConvention` supports excluding namespaces (e.g., DTOs) from the camelCase rule for parameters of named functions/methods.
 
 If you need to override the default excluded namespaces, you can configure the service in your project's PHPStan config by redefining the service and supplying the `excludedNamespaces` constructor argument, for example:
 
